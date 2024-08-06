@@ -1,7 +1,4 @@
-
-# Perl6 Fortran::Grammar module [![Build Status](https://travis-ci.org/nobodyinperson/perl6-fortran-grammar.svg?branch=master)](https://travis-ci.org/nobodyinperson/perl6-fortran-grammar)
-
-Perl6 grammar to parse FORTRAN source code
+Raku grammar to parse FORTRAN source code
 
 **Note**: This module is still in very early development.
 
@@ -14,12 +11,12 @@ text filter that scans the source code and automatically wraps
 subroutine calls. To get information on this code and fill the 
 `write (*,*) ...` statements with useful information, it has to be parsed.
 
-I initially wrote a Perl5 script to do this by parsing the source code
+I initially wrote a Perl script to do this by parsing the source code
 line-by-line. Parsing became more and more ugly the stranger the code became ( a
 lot of nested arguments, Fortran-style line continuation with `& \n &`, 
 the code of interest enclosed in `IF`-oneliners, etc...)
 
-When I discovered Perl6 Grammars, I immediately wanted to implement this :-)
+When I discovered Raku Grammars, I immediately wanted to implement this :-)
 
 The main goal of this module is not to provide a Fortran syntax-checker
 (although with a lot of work it could become one...) but to give painless access
@@ -30,9 +27,9 @@ calculations), etc...
 
 ## Usage
 
-Use it like any grammar in Perl6:
+Use it like any grammar in Raku
 
-```perl6
+```raku
 #!/usr/bin/env perl6
 use Fortran::Grammar; # use the module
 
@@ -54,14 +51,14 @@ say $parsed;
 
 Output:
 
-```perl6
+```raku
 ### input ###
 ```
 ```fortran
 call sub( array(1:2), sin(1.234_prec), & ! Fortran-style linebreak / comment
     & (/ 1.23, 3.45, 6.78 /), "Hello World!" )
 ```
-```perl6
+```raku
 ### parsed ###
 ｢call sub( array(1:2), sin(1.234_prec), & ! Fortran-style linebreak / comment
     & (/ 1.23, 3.45, 6.78 /), "Hello World!" )｣
@@ -125,20 +122,6 @@ call sub( array(1:2), sin(1.234_prec), & ! Fortran-style linebreak / comment
     in-place => ｢"Hello World!" ｣
      atomic => ｢"Hello World!" ｣
       string => ｢"Hello World!" ｣
-```
-
-## Install
-
-If you use [panda](https://github.com/tadzik/panda), install `Fortran::Grammar` via 
-
-```bash
-panda install Fortran::Grammar
-```
-
-or from the repository root
-
-```bash
-panda install .
 ```
 
 ## Special thanks
