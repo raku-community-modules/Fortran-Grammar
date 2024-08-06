@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/raku-community-modules/Fortran-Grammar/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Fortran-Grammar/actions) [![Actions Status](https://github.com/raku-community-modules/Fortran-Grammar/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Fortran-Grammar/actions) [![Actions Status](https://github.com/raku-community-modules/Fortran-Grammar/actions/workflows/windows.yml/badge.svg)](https://github.com/raku-community-modules/Fortran-Grammar/actions)
+[![Actions Status](https://github.com/raku-community-modules/Fortran-Grammar/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Fortran-Grammar/actions) [![Actions Status](https://github.com/raku-community-modules/Fortran-Grammar/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Fortran-Grammar/actions)
 
 NAME
 ====

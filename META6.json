@@ -1,6 +1,8 @@
 {
+  "auth": "zef:raku-community-modules",
   "authors": [
-    "Yann Büchau"
+    "Yann Büchau",
+    "Raku Community"
   ],
   "build-depends": [
   ],
@@ -18,11 +20,13 @@
   ],
   "source-url": "https://github.com/raku-community-modules/Fortran-Grammar.git",
   "tags": [
+    "FORTRAN",
+    "GRAMMAR"
   ],
   "test-depends": [
     "Test::META",
     "JSON::Fast",
     "IO::Glob"
   ],
-  "version": "0.0.6"
+  "version": "0.0.7"
 }
