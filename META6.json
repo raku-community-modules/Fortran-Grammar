@@ -1,21 +1,28 @@
 {
-    "perl" : "6",
-    "name" : "Fortran::Grammar",
-    "license" : "GPL-3.0",
-    "version" : "0.0.6",
-    "description" : "Grammar to parse FORTRAN source code",
-    "authors" : [ "Yann Büchau" ],
-    "provides" : {
-        "Fortran::Grammar" : "lib/Fortran/Grammar.rakumod",
-        "Fortran::Grammar::Test" : "lib/Fortran/Grammar/Test.rakumod"
-    },
-    "test-depends" : [ 
-        "Test::META",
-        "JSON::Fast",
-        "IO::Glob"
-        ],
-    "depends" : [ 
-        ],
-    "resources" : [ ],
-    "source-url" : "https://github.com/raku-community-modules/Fortran-Grammar.git"
+  "authors": [
+    "Yann Büchau"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Grammar to parse FORTRAN source code",
+  "license": "GPL-3.0",
+  "name": "Fortran::Grammar",
+  "perl": "6",
+  "provides": {
+    "Fortran::Grammar": "lib/Fortran/Grammar.rakumod",
+    "Fortran::Grammar::Test": "lib/Fortran/Grammar/Test.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/Fortran-Grammar.git",
+  "tags": [
+  ],
+  "test-depends": [
+    "Test::META",
+    "JSON::Fast",
+    "IO::Glob"
+  ],
+  "version": "0.0.6"
 }

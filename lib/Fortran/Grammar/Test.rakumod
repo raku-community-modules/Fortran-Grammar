@@ -1,11 +1,8 @@
-#!/usr/bin/env perl6
-use v6;
-
 unit module Fortran::Grammar::Test;
 
 # taken from http://stackoverflow.com/a/42039566/5433146
 # thanks to smls
-class TestActions is export { 
+our class TestActions { 
     #| Fallback action method that produces a Hash tree from named captures.
     method FALLBACK ($name, $/) {
 
@@ -37,4 +34,4 @@ class TestActions is export {
     }
 }
 
-
+# vim: expandtab shiftwidth=4
